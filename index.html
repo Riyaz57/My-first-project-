@@ -1,96 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Instagram Clone</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-  <!-- Add an icon library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Morphism Login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+    </body>
+<div class="glass-container">
+    <h2>Login</h2>
+    <from>
+        <div class="input-group">
+            <input type="text"required>
+            <label>Username</label>
+        </div>
+        <div class="input-group">
+            <input type="Password" required>
+            <label>Password</label>
+            <div>
+                <div class="remeber-forgot">
+                    <label><input type="checkbox"> Remeber me </label>
+                    <a hidden="#">Forgot Password</a>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="logo">Instagram</div>
-    <div class="icons">
-      <i class="fa-regular fa-heart"></i>
-      <i class="fa-regular fa-paper-plane"></i>
-    </div>
-  </header>
+                    </label>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+                <div class="register-link">
+                    <p>Don't have an account <a href="#">Register</a></p>
+                </div>
 
-  <!-- STORIES -->
-  <div class="stories">
-    <div class="story"><img src="https://picsum.photos/60" alt=""><p>riyaz____54</p></div>
-    <div class="story"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8K89UH_T-e_4gndHVskz-jpxEbsRQnT40uA&s" alt=""><p>john_doe</p></div>
-    <div class="story"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMYR0TAT4xCZgg-7cvDs2gH02sMGHAIbFDYQ&s" alt=""><p>jane_smith</p></div>
-    <div class="story"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/MS_Dhoni_%28Prabhav_%2723_-_RiGI_2023%29.jpg" alt=""><p>Ms__Dhoni07</p></div>
-    <div class="story"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwL0YI1ybqxSCRlpKEcPaZ6hjwHM14lgoqrGWrvb9hZjcyx9w8sToGgO1pB3MCyKB1CRlSMG6Y6WLNVcsCSumHWw" alt=""><p>virat__kholi</p></div>
-  </div>
+                </div>
 
-  <!-- FEED -->
-  <div class="feed">
+            </div>
 
-    <div class="post">
-      <div class="post-header">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8K89UH_T-e_4gndHVskz-jpxEbsRQnT40uA&s" alt="">
-        <span class="username">john_doe</span>
-      </div>
-      <img class="post-img" src="https://i.pinimg.com/736x/08/b0/34/08b034c1aac713af003a5bcc0e8968ba.jpg" alt="Post">
-      <div class="post-actions">
-        <i class="fa-regular fa-heart like-btn"></i>
-        <i class="fa-regular fa-comment"></i>
-        <i class="fa-regular fa-paper-plane"></i>
-      </div>
-      <p class="likes">Liked by <b>alex</b> and <b>120 others</b></p>
-      <p class="caption"><b>john_doe</b> Beautiful day at the beach! 🌊</p>
-    </div>
-
-    <div class="post">
-      <div class="post-header">
-        <img src="https://picsum.photos/41" alt="">
-        <span class="username">jane_smith</span>
-      </div>
-      <img class="post-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNm9S0DJS5TPXfe5jBi2PozzQsWVuBkpPXQg&s" alt="Post">
-      <div class="post-actions">
-        <i class="fa-regular fa-heart like-btn"></i>
-        <i class="fa-regular fa-comment"></i>
-        <i class="fa-regular fa-paper-plane"></i>
-      </div>
-      <p class="likes">Liked by <b>mike</b> and <b>89 others</b></p>
-      <p class="caption"><b>jane_smith</b> Coffee vibes ☕✨</p>
-    </div>
-    <div class="post">
-      <div class="post-header">
-        <img src="https://c.ndtvimg.com/2024-05/gh12dg1_ms-dhoni-bcci_625x300_07_May_24.jpg?im=FeatureCrop,algorithm=dnn,width=806,height=605" alt="">
-        <span class="username">Ms__Dhoni07</span>
-      </div>
-      <img class="post-img" src="https://p.imgci.com/db/PICTURES/CMS/357400/357408.jpg" alt="Post">
-      <div class="post-actions">
-        <i class="fa-regular fa-heart like-btn"></i>
-        <i class="fa-regular fa-comment"></i>
-        <i class="fa-regular fa-paper-plane"></i>
-      </div>
-      <p class="likes">Liked by <b>mike</b> and <b>500 others</b></p>
-      <p class="caption"><b>Ms__Dhoni07</b> CSK</p>
-      <div class="post">
-      <div class="post-header">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwL0YI1ybqxSCRlpKEcPaZ6hjwHM14lgoqrGWrvb9hZjcyx9w8sToGgO1pB3MCyKB1CRlSMG6Y6WLNVcsCSumHWw" alt="">
-        <span class="username">virat__kholi</span>
-      </div>
-      <img class="post-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwL0YI1ybqxSCRlpKEcPaZ6hjwHM14lgoqrGWrvb9hZjcyx9w8sToGgO1pB3MCyKB1CRlSMG6Y6WLNVcsCSumHWw" alt="Post">
-      <div class="post-actions">
-        <i class="fa-regular fa-heart like-btn"></i>
-        <i class="fa-regular fa-comment"></i>
-        <i class="fa-regular fa-paper-plane"></i>
-      </div>
-      <p class="likes">Liked by <b>mike</b> and <b>500 others</b></p>
-      <p class="caption"><b>virat__kholi</b> RCB the team of ipl</p>
-
-
-
-  </div>
-
-</body>
+    </from>
 </html>
